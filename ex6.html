@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charest="UTF-8">
+<meta http-equiv="X-UA-Compatible" content ="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> DOCUMENT </title>
+<script src="https : //unpkg.com/react@17/umd/react.development.js" crossorigin"></script>
+<script src="https : //unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin"></script>
+<script src="https : //@babel/standalone/babel.min.js></script>
+</head>
+<body>
+<script type= <"text/ babel">
+
+Class NomComposant extends React.component {
+
+constructor (props) {
+super (props) ;
+let prenom=this.props.saisie;
+prenom.tostring().split("")[0];
+this.state ={ saisie : prenom}
+
+
+}
+render (){
+
+    return (<vous etes les bienvenues , {this.state.saisie}>    )
+}
+
+
+}
+
+
+const element=<NomComposant saisie ="himm">
+ReactDOM.render (element ,document.getElementById("root") )
+</script>
+<div id="root"></div>
+</body>
+</html>
